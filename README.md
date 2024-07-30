@@ -12,3 +12,13 @@ There exist many high quality vignettes online that walk readers through each st
 
 # Structure
 
+It's hard to coherently categorize the space of statistical models, but this repository needs to have some structure, so I've tried to organize it into folders and subfolders grouped on common themes. Our primary unit of operation is a folder whose name is descriptive of the model's distinguishing features, which in turn contains:
+
+- **\*.stan files**: giving the implementation of the model in Stan
+- **\*.R files**: giving R code to generate input for the model, as well as actually fitting the model through [cmdstanr](https://mc-stan.org/cmdstanr/)
+- **/data/**: storing data files that are used as input for the model
+- **README.md**: giving a general overview of the model, as well as its motivations, meanings, and performance
+- **/images/**: storing image files that are used in the README
+- **/tables/**: storing tables files that are used in the README
+
+# Contributions
